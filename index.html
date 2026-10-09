@@ -1,143 +1,114 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="DevOps Engineer portfolio showcasing Linux, Docker, AWS, MySQL, Terraform, and CI/CD projects.">
-  <title>Abhishek Singh | DevOps Engineer</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Abhishek Singh — Linux Administrator and DevOps Engineer focused on cloud infrastructure, automation, CI/CD, and monitoring.">
+  <title>Abhishek Singh | DevOps Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
   <header class="site-header">
     <nav class="nav container" aria-label="Main navigation">
-      <a class="logo" href="#home">My<span>Portfolio</span></a>
+      <a class="brand" href="#home" aria-label="Abhishek Singh home"><span class="brand-mark">⌘</span><span>96<span class="accent">abhi</span></span></a>
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
       <div class="nav-links">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <a href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
       </div>
     </nav>
   </header>
 
   <main>
-    <section class="hero" id="home">
-      <div class="container hero-content">
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow">HELLO, I'M</p>
-          <h1>Your <span>Name</span></h1>
-          <h2>DevOps Engineer | Linux | Docker | AWS</h2>
-          <p class="hero-description">
-            I build reliable infrastructure, automate deployments, and help
-            applications run securely and smoothly.
-          </p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#projects">View Projects</a>
-            <a class="button button-outline" href="#contact">Contact Me</a>
+          <p class="eyebrow">LINUX ADMINISTRATION · CLOUD · AUTOMATION</p>
+          <h1>Hi, I'm <span class="accent">Abhishek Singh</span></h1>
+          <h2>Linux Administrator <span class="muted">|</span> Aspiring DevOps Engineer</h2>
+          <p class="lead">I build, automate, and troubleshoot reliable infrastructure using Linux, AWS, Docker, CI/CD, configuration management, and monitoring tools.</p>
+          <div class="actions">
+            <a class="button primary" href="#projects">Explore Projects <span aria-hidden="true">↗</span></a>
+            <a class="button secondary" href="https://github.com/96abhi" target="_blank" rel="noreferrer">GitHub Profile</a>
+          </div>
+          <div class="social-links">
+            <a href="https://github.com/96abhi" target="_blank" rel="noreferrer">GitHub ↗</a>
+            <a href="#contact">Contact ↗</a>
           </div>
         </div>
-        <div class="hero-art" aria-label="DevOps illustration" role="img">
-          <div class="orbit orbit-one"></div>
-          <div class="orbit orbit-two"></div>
-          <div class="terminal">
-            <div class="terminal-top"><i></i><i></i><i></i><span>devops@portfolio:~</span></div>
-            <div class="terminal-body">
-              <p><b>$</b> whoami</p>
-              <p class="terminal-output">DevOps Engineer</p>
-              <p><b>$</b> skills --list</p>
-              <p class="terminal-output">Linux · Docker · AWS</p>
-              <p><b>$</b> deploy --status</p>
-              <p class="success">✓ deployment successful</p>
-              <p><b>$</b> <span class="cursor">_</span></p>
-            </div>
+        <div class="hero-art" aria-label="DevOps workflow illustration">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <div class="infinity">∞</div>
+          <div class="art-label label-linux"><span>🐧</span> Linux</div>
+          <div class="art-label label-aws"><span>☁</span> AWS</div>
+          <div class="art-label label-docker"><span>▰</span> Docker</div>
+          <div class="art-label label-terraform"><span>◆</span> Terraform</div>
+          <div class="art-label label-k8s"><span>✳</span> Kubernetes</div>
+          <div class="art-label label-jenkins"><span>⚙</span> Jenkins</div>
+          <div class="art-label label-ansible"><span>▲</span> Ansible</div>
+          <div class="art-center"><strong>DEV</strong><span>OPS</span></div>
+          <p class="art-caption">Plan · Build · Deploy · Monitor</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section content-section" id="about">
+      <div class="container three-column">
+        <article class="panel about-panel">
+          <p class="section-kicker">A LITTLE ABOUT ME</p>
+          <h2>Infrastructure that works <span class="accent">better.</span></h2>
+          <p>I’m a Linux Administrator with around four years of experience supporting Linux environments and cloud infrastructure. I’m growing my DevOps practice through hands-on work with automation, containers, pipelines, and infrastructure as code.</p>
+          <div class="mini-facts">
+            <div><span class="fact-icon">⌖</span><p><strong>Location</strong><br>Delhi NCR, India</p></div>
+            <div><span class="fact-icon">⌘</span><p><strong>Focus</strong><br>Linux · AWS · DevOps</p></div>
+            <div><span class="fact-icon">↗</span><p><strong>Learning</strong><br>IaC · CI/CD · Kubernetes</p></div>
           </div>
-          <span class="float-tag tag-docker">▣ Docker</span>
-          <span class="float-tag tag-cloud">☁ AWS Cloud</span>
-        </div>
+        </article>
+
+        <article class="panel skills-panel" id="skills">
+          <p class="section-kicker">MY TOOLKIT</p>
+          <h2>Skills & Technologies</h2>
+          <p class="subtle">Tools I use and practice across infrastructure and delivery workflows.</p>
+          <div class="skill-group"><h3>Operating Systems</h3><div class="chips"><span>Linux</span><span>Ubuntu</span><span>CentOS</span><span>Shell scripting</span></div></div>
+          <div class="skill-group"><h3>Cloud & Infrastructure</h3><div class="chips"><span>AWS EC2</span><span>VPC</span><span>IAM</span><span>S3</span><span>CloudWatch</span><span>Terraform</span></div></div>
+          <div class="skill-group"><h3>DevOps & Monitoring</h3><div class="chips"><span>Git / GitHub</span><span>Jenkins</span><span>GitHub Actions</span><span>Docker</span><span>Ansible</span><span>Prometheus</span><span>Grafana</span><span>Kubernetes basics</span></div></div>
+        </article>
+
+        <article class="panel projects-panel" id="projects">
+          <div class="panel-heading"><div><p class="section-kicker">SELECTED WORK</p><h2>Featured Projects</h2></div><a href="https://github.com/96abhi" target="_blank" rel="noreferrer" class="text-link">All repositories ↗</a></div>
+          <a class="project-card" href="https://github.com/96abhi/terraform-docker" target="_blank" rel="noreferrer">
+            <div class="project-icon">▰</div><div><h3>Terraform + Docker</h3><p>Provision and manage Docker resources with Terraform, demonstrating Infrastructure as Code and repeatable container deployment.</p><div class="tags"><span>Terraform</span><span>Docker</span><span>Nginx</span></div></div><span class="card-arrow">↗</span>
+          </a>
+          <a class="project-card" href="https://github.com/96abhi/test-demo" target="_blank" rel="noreferrer">
+            <div class="project-icon">⇄</div><div><h3>GitHub Actions CI/CD</h3><p>Explore a GitHub Actions demo repository for automated workflow and CI/CD practice.</p><div class="tags"><span>GitHub Actions</span><span>CI/CD</span><span>Git</span></div></div><span class="card-arrow">↗</span>
+          </a>
+          <a class="project-card" href="https://github.com/96abhi" target="_blank" rel="noreferrer">
+            <div class="project-icon">⬡</div><div><h3>Node.js + Jenkins Automation</h3><p>Node.js application delivery using Jenkins pipeline concepts to automate build and deployment steps.</p><div class="tags"><span>Node.js</span><span>Jenkins</span><span>Docker</span></div></div><span class="card-arrow">↗</span>
+          </a>
+          <p class="small-note">The first two cards link to your supplied repositories. The Node.js + Jenkins card currently links to your GitHub profile; replace it with the specific repository URL when available.</p>
+        </article>
       </div>
     </section>
 
-    <section class="section about-section" id="about">
-      <div class="container about-grid">
-        <div>
-          <p class="section-kicker">GET TO KNOW ME</p>
-          <h2 class="section-title">About Me</h2>
-          <p class="section-copy">
-            I'm a Linux Administrator growing my expertise in DevOps, cloud
-            infrastructure, containers, automation, and monitoring. I enjoy
-            troubleshooting production-like issues, documenting solutions, and
-            learning by building hands-on projects.
-          </p>
-        </div>
-        <aside class="contact-panel">
-          <p><span class="contact-icon">⌖</span> India</p>
-          <p><span class="contact-icon">@</span> <a href="mailto:abhisheksingh441998@gmail.com">abhisheksingh441998@gmail.com</a></p>
-          <p><span class="contact-icon">⌘</span> <a href="https://github.com/96abhi">github.com/96abhi</a></p>
-          <p><span class="contact-icon">in</span> <a href="https://www.linkedin.com/in/96abhi/">LinkedIn profile</a></p>
-        </aside>
-      </div>
-    </section>
-
-    <section class="section skills-section" id="skills">
-      <div class="container">
-        <p class="section-kicker">WHAT I WORK WITH</p>
-        <h2 class="section-title">Technical Skills</h2>
-        <div class="skills-list">
-          <span>🐧 Linux</span><span>🐳 Docker</span><span>☁ AWS</span>
-          <span>⌘ Git & GitHub</span><span>▤ MySQL</span><span>⚙ Terraform</span>
-          <span>♧ Jenkins</span><span>◈ Ansible</span><span>◉ Prometheus & Grafana</span>
-          <span>▦ GitHub Actions</span>
-        </div>
-        <p class="skills-note">Update this list to reflect your current skills and hands-on experience.</p>
-      </div>
-    </section>
-
-    <section class="section projects-section" id="projects">
-      <div class="container">
-        <p class="section-kicker">WHAT I'VE BUILT</p>
-        <h2 class="section-title">Featured Projects</h2>
-        <div class="project-grid">
-          <article class="project-card">
-            <div class="project-symbol symbol-blue">▤</div>
-            <h3>MySQL in Docker</h3>
-            <p>Containerized MySQL with sample booking data, SQL queries, indexes, and backup/restore scripts.</p>
-            <div class="tag-list"><span>Docker Compose</span><span>MySQL</span><span>Bash</span></div>
-            <a class="project-link" href="https://github.com/96abhi/wanderlust.git">View repository ↗</a>
-          </article>
-          <article class="project-card">
-            <div class="project-symbol symbol-purple">⌘</div>
-            <h3>CI/CD Pipeline</h3>
-            <p>A sample application pipeline that builds a Docker image and automates checks with GitHub Actions.</p>
-            <div class="tag-list"><span>GitHub Actions</span><span>Docker</span><span>CI/CD</span></div>
-            <a class="project-link" href="https://github.com/96abhi/test-demo.git">View repository ↗</a>
-          </article>
-          <article class="project-card">
-            <div class="project-symbol symbol-green">☁</div>
-            <h3>AWS Infrastructure</h3>
-            <p>Practice infrastructure with Terraform, VPC networking, public and private subnets, and security groups.</p>
-            <div class="tag-list"><span>AWS</span><span>Terraform</span><span>Networking</span></div>
-            <a class="project-link" href="https://github.com/96abhi/terraform-docker.git">View repository ↗</a>
-          </article>
+    <section class="section experience-section" id="experience">
+      <div class="container experience-grid">
+        <div><p class="section-kicker">CAREER JOURNEY</p><h2>Experience & <span class="accent">Learning</span></h2><p class="subtle">A foundation in systems administration, expanding into automation and delivery.</p></div>
+        <div class="timeline">
+          <article class="timeline-item"><span class="timeline-dot"></span><p class="timeline-meta">FEB 2022 – PRESENT · NOIDA</p><h3>Linux Administrator & Cloud Infrastructure Engineer</h3><ul><li>Administer Linux servers across development and staging environments.</li><li>Work with AWS services including EC2, VPC, IAM, S3, and CloudWatch.</li><li>Troubleshoot service, process, disk, log, and network issues.</li><li>Practice automation and delivery workflows using Ansible, Jenkins, Docker, and Terraform.</li></ul></article>
+          <article class="timeline-item"><span class="timeline-dot"></span><p class="timeline-meta">HANDS-ON TRAINING</p><h3>DevOps Engineering Practice</h3><ul><li>Build labs around AWS networking, Git/GitHub, Ansible, Jenkins, and Terraform.</li><li>Develop CI/CD projects and container-based deployment workflows.</li></ul></article>
         </div>
       </div>
     </section>
 
     <section class="section contact-section" id="contact">
-      <div class="container contact-inner">
-        <p class="section-kicker">LET'S CONNECT</p>
-        <h2 class="section-title">Have a project in mind?</h2>
-        <p>I'm always happy to connect with people working in Linux, cloud, and DevOps.</p>
-        <a class="button button-primary" href="mailto:abhisheksingh441998@gmail.com">Email Me</a>
+      <div class="container contact-card">
+        <div><p class="section-kicker">LET'S CONNECT</p><h2>Have a DevOps opportunity or project?</h2><p class="subtle">I’m interested in Linux, Cloud, DevOps, and infrastructure automation opportunities.</p></div>
+        <div class="contact-actions"><a class="button primary" href="https://github.com/96abhi" target="_blank" rel="noreferrer">Connect on GitHub ↗</a><a class="button secondary" href="mailto:YOUR_EMAIL@example.com">Email Me</a></div>
+        <p class="small-note full-width">Before publishing, replace <code>YOUR_EMAIL@example.com</code> with your preferred professional email and add your resume file if you want a download link.</p>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-content">
-      <p>© <span id="year">2026</span> Abhishek Singh. Built with HTML & CSS.</p>
-      <a href="#home">Back to top ↑</a>
-    </div>
-  </footer>
+  <footer class="footer"><div class="container footer-inner"><a class="brand" href="#home">96<span class="accent">abhi</span></a><span>Automate · Deploy · Monitor · Improve</span><a href="#home">Back to top ↑</a></div><div class="container copyright">© <span id="year"></span> Abhishek Singh. Built with HTML, CSS & JavaScript.</div></footer>
 </body>
 </html>

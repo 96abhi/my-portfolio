@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DevOps Engineer portfolio showcasing Linux, Docker, AWS, MySQL, Terraform, and CI/CD projects.">
+  <title>Abhishek Singh | DevOps Engineer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="logo" href="#home">My<span>Portfolio</span></a>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-content">
+        <div class="hero-copy">
+          <p class="eyebrow">HELLO, I'M</p>
+          <h1>Your <span>Name</span></h1>
+          <h2>DevOps Engineer | Linux | Docker | AWS</h2>
+          <p class="hero-description">
+            I build reliable infrastructure, automate deployments, and help
+            applications run securely and smoothly.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">View Projects</a>
+            <a class="button button-outline" href="#contact">Contact Me</a>
+          </div>
+        </div>
+        <div class="hero-art" aria-label="DevOps illustration" role="img">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="terminal">
+            <div class="terminal-top"><i></i><i></i><i></i><span>devops@portfolio:~</span></div>
+            <div class="terminal-body">
+              <p><b>$</b> whoami</p>
+              <p class="terminal-output">DevOps Engineer</p>
+              <p><b>$</b> skills --list</p>
+              <p class="terminal-output">Linux · Docker · AWS</p>
+              <p><b>$</b> deploy --status</p>
+              <p class="success">✓ deployment successful</p>
+              <p><b>$</b> <span class="cursor">_</span></p>
+            </div>
+          </div>
+          <span class="float-tag tag-docker">▣ Docker</span>
+          <span class="float-tag tag-cloud">☁ AWS Cloud</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="container about-grid">
+        <div>
+          <p class="section-kicker">GET TO KNOW ME</p>
+          <h2 class="section-title">About Me</h2>
+          <p class="section-copy">
+            I'm a Linux Administrator growing my expertise in DevOps, cloud
+            infrastructure, containers, automation, and monitoring. I enjoy
+            troubleshooting production-like issues, documenting solutions, and
+            learning by building hands-on projects.
+          </p>
+        </div>
+        <aside class="contact-panel">
+          <p><span class="contact-icon">⌖</span> India</p>
+          <p><span class="contact-icon">@</span> <a href="mailto:abhisheksingh441998@gmail.com">abhisheksingh441998@gmail.com</a></p>
+          <p><span class="contact-icon">⌘</span> <a href="https://github.com/96abhi">github.com/96abhi</a></p>
+          <p><span class="contact-icon">in</span> <a href="https://www.linkedin.com/in/96abhi/">LinkedIn profile</a></p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <p class="section-kicker">WHAT I WORK WITH</p>
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-list">
+          <span>🐧 Linux</span><span>🐳 Docker</span><span>☁ AWS</span>
+          <span>⌘ Git & GitHub</span><span>▤ MySQL</span><span>⚙ Terraform</span>
+          <span>♧ Jenkins</span><span>◈ Ansible</span><span>◉ Prometheus & Grafana</span>
+          <span>▦ GitHub Actions</span>
+        </div>
+        <p class="skills-note">Update this list to reflect your current skills and hands-on experience.</p>
+      </div>
+    </section>
+
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <p class="section-kicker">WHAT I'VE BUILT</p>
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-symbol symbol-blue">▤</div>
+            <h3>MySQL in Docker</h3>
+            <p>Containerized MySQL with sample booking data, SQL queries, indexes, and backup/restore scripts.</p>
+            <div class="tag-list"><span>Docker Compose</span><span>MySQL</span><span>Bash</span></div>
+            <a class="project-link" href="https://github.com/96abhi/mysql-docker">View repository ↗</a>
+          </article>
+          <article class="project-card">
+            <div class="project-symbol symbol-purple">⌘</div>
+            <h3>CI/CD Pipeline</h3>
+            <p>A sample application pipeline that builds a Docker image and automates checks with GitHub Actions.</p>
+            <div class="tag-list"><span>GitHub Actions</span><span>Docker</span><span>CI/CD</span></div>
+            <a class="project-link" href="https://github.com/96abhi/ci-cd-project">View repository ↗</a>
+          </article>
+          <article class="project-card">
+            <div class="project-symbol symbol-green">☁</div>
+            <h3>AWS Infrastructure</h3>
+            <p>Practice infrastructure with Terraform, VPC networking, public and private subnets, and security groups.</p>
+            <div class="tag-list"><span>AWS</span><span>Terraform</span><span>Networking</span></div>
+            <a class="project-link" href="https://github.com/96abhi/aws-terraform-project">View repository ↗</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container contact-inner">
+        <p class="section-kicker">LET'S CONNECT</p>
+        <h2 class="section-title">Have a project in mind?</h2>
+        <p>I'm always happy to connect with people working in Linux, cloud, and DevOps.</p>
+        <a class="button button-primary" href="mailto:abhisheksingh441998@gmail.com">Email Me</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>© <span id="year">2026</span> Abhishek Singh. Built with HTML & CSS.</p>
+      <a href="#home">Back to top ↑</a>
+    </div>
+  </footer>
+</body>
+</html>

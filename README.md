@@ -1,26 +1,64 @@
-# DevOps Portfolio Website
+# Abhishek Singh — DevOps Portfolio
 
-A responsive static portfolio built with plain HTML and CSS, suitable for GitHub Pages.
+A responsive portfolio website for GitHub Pages, built with plain HTML, CSS, and JavaScript.
 
-## Files
+## Preview locally
 
-- `index.html` — page content and sections
-- `style.css` — responsive layout, colors, and styling
+No build tools are required. Open `index.html` in your browser, or start a simple local server:
 
-## Customize it
+```bash
+python3 -m http.server 8000
+```
 
-1. Replace `Your Name` with your name.
-2. Update the email, GitHub username, LinkedIn URL, and project repository URLs.
-3. Edit the skills and project descriptions so they accurately reflect your work.
-4. Commit and push the files to a GitHub repository.
+Then visit <http://localhost:8000>.
 
 ## Publish with GitHub Pages
 
-1. Create a repository named `96abhi.github.io` for a user site, or use any repository name for a project site.
-2. Upload `index.html`, `style.css`, and `README.md` to the repository's root.
-3. Open **Settings → Pages**.
-4. Under **Build and deployment**, select **Deploy from a branch**.
-5. Select the `main` branch and `/(root)` folder, then save.
-6. Wait for the deployment to finish. GitHub will show the published site URL in Settings → Pages.
+1. Create a public repository named `devops-portfolio` at <https://github.com/new>.
+2. Copy the files from this folder into the repository root.
+3. Commit and push to the `main` branch:
 
-No build step or JavaScript framework is required.
+   ```bash
+   git add .
+   git commit -m "Add DevOps portfolio website"
+   git branch -M main
+   git push -u origin main
+   ```
+
+4. In the repository, open **Settings → Pages**.
+5. Under **Build and deployment**, choose **Deploy from a branch**.
+6. Select branch `main` and folder `/ (root)`, then click **Save**.
+7. Wait for deployment. The expected URL is:
+
+   `https://96abhi.github.io/devops-portfolio/`
+
+## Before publishing
+
+- Replace `YOUR_EMAIL@example.com` in `index.html` with your professional email address.
+- Update project cards with the direct URLs for the repositories you want to feature.
+- Add a resume PDF to the repository if desired, and link it from the hero section.
+- Verify experience dates and descriptions match your actual work.
+- Do not upload passwords, access keys, Terraform state files, or other secrets.
+
+## Files
+
+```text
+my-portfolio/
+├── index.html
+├── styles.css
+├── script.js
+└── README.md
+```
+
+## Featured projects
+
+1. [Terraform + Docker](https://github.com/96abhi/terraform-docker) — Terraform-managed Docker resources.
+2. [GitHub Actions CI/CD demo](https://github.com/96abhi/test-demo) — GitHub Actions workflow practice.
+3. **Node.js + Jenkins Automation** — Add the direct repository link when the project repository is ready. The website currently links this card to the GitHub profile.
+
+## Built with
+
+- HTML5
+- CSS3 (responsive layout)
+- Vanilla JavaScript
+- GitHub Pages
